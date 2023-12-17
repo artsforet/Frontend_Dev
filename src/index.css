@@ -1,0 +1,28 @@
+/* font-family: 'Black Han Sans', sans-serif;
+font-family: 'Noto Sans Linear A', sans-serif; */
+
+body {
+  margin: 0;
+  font-family: 'Black Han Sans', sans-serif;
+  font-weight: 200;
+  background-color: black;
+  /* font-family: -apple-system, BlinkMacSystemFont, '검은고딕', 'Segoe UI', 'Roboto', 'Oxygen', */
+    /* 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', */
+    /* sans-serif; */
+  /* -webkit-f ont-smoothing: antialiased; */
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+
+body, div, ul, li, serction, article, table, thead, tr, td, tfoot {
+  margin:0;
+  padding: 0;
+}
+
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

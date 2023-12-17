@@ -1,0 +1,16 @@
+.commend {   
+    height: 1020px;
+    display: flex; 
+}
+
+.commend > li {
+    width: 150px;
+    height: 150px;
+    margin: 0 20px;
+    border-radius: 25px;
+    background-color: orange;
+    line-height: 150px;
+    justify-content: center;
+    margin-top: 500px;
+    color: white;
+} 

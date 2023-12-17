@@ -1,0 +1,58 @@
+    .login_wrap {
+    width: 100%;
+    height: 1020px;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    padding-top: 200px;
+}
+
+input {
+    margin: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+input::before {
+    box-shadow: none;
+}
+
+input {
+    box-shadow: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid black;
+}
+
+
+
+input:-internal-autofill-selected {
+    background-color: black;
+}
+
+button {
+    background-color: none;
+    border: None;
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+
+button:active {
+    background-color: none;
+    border: none;
+    cursor: none;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: 글자색;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  transition: background-color 5000s ease-in-out 0s;
+  border: 1px solid black;
+} 
