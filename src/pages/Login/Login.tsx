@@ -11,7 +11,7 @@ export default function Login(){
 
     useEffect(() => {
     });
-    
+
     const login_email = (e: any) => {
         console.log(e.target.value);
     }
@@ -20,25 +20,25 @@ export default function Login(){
     }
     const login = (e: any) => {
       if(e.target.value) {
-        
+
       }
         console.log("로그인");
-    } 
+    }
     const register = (e: any) => {
         console.log("회원가입")
     }
 
     const login_ofm = async () => {
-        var value = await axios.get("http://localhost:3000/")
+        var value = await axios.get("http://118.67.133.133:3001/")
         .then(response => console.log(response.data))
-        .catch(error => console.error(error)); 
+        .catch(error => console.error(error));
     };
     login_ofm();
 
     useEffect(() => {
         changeColor(currentInput);
         const inputElem = document.querySelectorAll("input[name='email']");
-    
+
         inputElem.forEach((elem: any, current: any) => {
           if (elem.value === current) {
             elem.style.backgroundColor = '#40a9ff';
@@ -50,9 +50,9 @@ export default function Login(){
         });
 
       }, [currentInput]);
-    
+
       const changeColor = (current: any) => {
-       
+
       };
 
     return (
@@ -60,11 +60,11 @@ export default function Login(){
         <HeaderMain />
         <LignComponent>
           <form className="login_wrap">
-              <input name="email" type="email" onChange={login_email} /> <br />   
-              <input type="password" onChange={login_password} /> <br />  
+              <input name="email" type="email" onChange={login_email} /> <br />
+              <input type="password" onChange={login_password} /> <br />
               <button onClick={login}> 로그인 </button>
               <button onClick={register}> 회원가입 </button>
-          </form>  
+          </form>
         </LignComponent>
       </div>
     )

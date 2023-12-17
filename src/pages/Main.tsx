@@ -13,7 +13,7 @@ export default function Main(){
         // .then(response => console.log(response.data))
         // .catch();
         const axios_data = async () => {
-            const response_data = axios.get("http://localhost:3001")
+            const response_data = axios.get("http://118.67.133.133:3001")
             .then(response => response.data)
             .catch()
         }
